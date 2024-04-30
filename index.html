@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <button id="startButton">Start Game</button>
+
+    <div class="game-display">
+        <div class="choice-display" id="compChoice">
+            <img id="compImg" src="" alt="" class="choice-image">
+            <p>Computer</p>
+        </div>
+        
+        <div class="choice-display" id="userChoice">
+            <img id="userImg" src="" alt="" class="choice-image">
+            <p>You</p>
+        </div>
+    </div>
+
+    <div id="scoreBoard">
+        <div>Computer Wins: <span id="compWins">0</span></div>
+        <div>Draws: <span id="draws">0</span></div>
+        <div>Your Wins: <span id="userWins">0</span></div>
+    </div>
+
+    <div id="timer">Time left: <span id="timeLeft">3</span> second</div>
+    
+    <div id="choices">
+        <div class="choice" id="rock"><img src="images/rock.png" alt="Rock"></div>
+        <div class="choice" id="paper"><img src="images/paper.png" alt="Paper"></div>
+        <div class="choice" id="scissors"><img src="images/scissors.png" alt="Scissors"></div>
+    </div>
+
+    <div id="message">Play your move</div>
+
+    <div id="popup" class="hidden">
+        <div id="popupContent">
+            <p id="popupMessage"></p>
+            <button id="popupButton">Okay</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
